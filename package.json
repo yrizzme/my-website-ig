@@ -8,6 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/memoizee": "^0.4.12",
+    "memoizee": "^0.4.17",
+    "openid-client": "^6.8.1",
     "vite": "^5.4.8"
   }
 }
