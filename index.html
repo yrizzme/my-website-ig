@@ -65,52 +65,8 @@
       <div class="text">dont worry this is VERY MUCH a wip</div>
     </div>
   </div>
+e
 
-
-    <div id="tic-tac-toe">
-      <h3>tic-tac-toe</h3>
-      <div style="display:grid;grid-template:repeat(3,50px)/repeat(3,50px);gap:5px;">
-        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
-        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
-        <div class="cell"></div><div class="cell"></div><div class="cell"></div>
-      </div>
-      <p id="winner"></p>
-      <button id="resetTic">reset</button>
-    </div>
-    <script>
-    const cells = document.querySelectorAll('#tic-tac-toe .cell');
-    let turn='X';
-
-    function checkWinner(){
-      const combos=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
-      for(const c of combos){
-        const [a,b,c1]=c;
-        if(cells[a].textContent && cells[a].textContent===cells[b].textContent && cells[a].textContent===cells[c1].textContent)
-          return cells[a].textContent;
-      }
-      return null;
-    }
-
-    cells.forEach(c=>{
-      c.style.border="1px solid #000";
-      c.style.textAlign="center";
-      c.style.fontSize="2em";
-      c.onclick=()=>{
-        if(c.textContent || document.getElementById('winner').textContent) return;
-        c.textContent = turn;
-        const w=checkWinner();
-        if(w) document.getElementById('winner').textContent = `${w} wins!`;
-        turn = turn==='X'?'O':'X';
-      }
-    });
-
-    document.getElementById('resetTic').onclick = ()=>{
-      cells.forEach(c=>c.textContent='');
-      document.getElementById('winner').textContent='';
-      turn='X';
-    }
-    </script>
-    
 
 <div class="row">
     <a href="https://www.youtube.com/watch?v=xMHJGd3wwZk" target="_blank">
@@ -118,6 +74,9 @@
     </a>
     <a href="https://blog.yahyarizmi.com" target="_blank">
       <img src="myblog.png" />
+    </a>
+    <a href="https://notes.yahyarizmi.com" target="_blank">
+      <img src="mynotesapp.png" />
     </a>
 </div>
 
