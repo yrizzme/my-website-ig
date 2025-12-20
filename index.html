@@ -78,6 +78,17 @@ e
     <a href="https://notes.yahyarizmi.com" target="_blank">
       <img src="mynotesapp.png" />
     </a>
+  <button id="themeBtn">toggle theme</button>
+  <script>
+  const btn = document.getElementById('themeBtn');
+  btn.onclick = ()=>{
+    document.body.classList.toggle('dark');
+  }
+  </script>
+  <style>
+  body.dark{background:#111;color:#eee}
+  button{margin:5px;padding:5px;}
+  </style>
 </div>
 
 
