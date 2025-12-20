@@ -224,3 +224,16 @@ main {
   color: rgb(80, 64, 152);
   font-weight: 600;
 }
+
+
+.row {
+  display: flex;
+  gap: 10px; /* space between images */
+  justify-content: center; /* center them horizontally */
+  align-items: center; /* align them vertically if needed */
+}
+.row img {
+  width: 100px; /* or whatever size you want */
+  height: auto;
+  cursor: pointer;
+}
