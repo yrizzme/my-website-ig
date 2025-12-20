@@ -1,5 +1,17 @@
 html,
 body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+html,
+body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -115,4 +127,99 @@ main {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* From Uiverse.io by vikas7754 */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+
+  45%,
+  55% {
+    width: 26ch;
+  }
+
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background: #d3d3ff;
+  border: 1px solid #ffffff3e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 0 15px rgb(211, 211, 255, 0.4);
+}
+
+.terminal-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343434;
+  padding: 6px;
+}
+
+.terminal-controls {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  gap: 7px;
+}
+
+.control {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e16160;
+}
+
+.control.minimize {
+  background-color: #f2c944;
+}
+
+.control.maximize {
+  background-color: #64c466;
+}
+
+.terminal-title {
+  color: #d3d3ffc1;
+}
+
+.content {
+  padding: 10px;
+}
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #4d4092;
+  animation: typeAndDelete 10s steps(39) infinite,
+    blinkCursor 0.9s step-end infinite alternate;
+  color: rgb(80, 64, 152);
+  font-weight: 600;
 }

@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html>
+  
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yrizzme</title>
     <link rel="stylesheet" href="/style.css">
   </head>
-
   <body>
-     <div id="auth-status" style="position: absolute; top: 10px; right: 10px;">
-       <div id="loading">Loading...</div>
-       <div id="logged-out" style="display: none;">
-         <a href="/api/login" class="auth-button">Log In</a>
-       </div>
-       <div id="logged-in" style="display: none;">
-         <span id="user-greeting"></span>
-         <a href="/api/logout" class="auth-button">Log Out</a>
-       </div>
-     </div>
-     <h1>yrizzme</h1>
-     <h3>yes rizmi is my legal surname</h3>
+
+     <h1>@yrizzme</h1>
+
     <p>hi, my name is yahya rizmi and i like to hack and tinker with tech, especially tech made before i was born.</p>
-    
-    <h5>im probably in london, uk or colombo, lk</h5>
-    <h5>im also probably eating</h5>
-    
+
+    <div class="row">
+      <h3>time:</h3>
+      <p id="time"></p>
+      <script>
+      setInterval(() => {
+        document.getElementById("time").textContent =
+          new Date().toLocaleTimeString("en-GB");
+      }, 1000);
+      </script>
+    </div>
+
+    <div class="row">
+      <h3>date:</h3>
+      <p id="date"></p>
+      <script>
+         document.getElementById("date").textContent =
+          new Date().toLocaleDateString("en-GB");
+      </script>
+    </div>
+    <p>shush this is the corect layout</p>
+        
+
+    <h5>📍london, uk</h5>
+    <h8></h8>
+
       <img src="lotustower.jpeg"
          style="width:128px; height:128px; border-radius:25%;" />
        <h5>the lotus tower</h5>
-    
-    <h3>im a</h3>
-    <p>-sri lankan guy
-    <p>-foodie
-    <p>-student
-    <p>-tech fan
-    <p>-tinkerer
-    <p>-coder
-    <p>-profressional sleeper</p>  
-    
-    <h2>links</h2>
-    
-    <p>moi's favorite playlist: <a href="https://open.spotify.com/playlist/..." target="_blank">chai n'chill</a></p>
-    <p>me favorite shanty podcast: <a href="https://www.youtube.com/@Waveform" target="_blank">waveform</a></p>
-    <p>my favorite youtube series rn: <a href="https://www.youtube.com/@ryan" target="_blank">whatever ryan trahan's latest series is</a></p>
-    
-    <h4>my links</h4>
-    <p>my insta: <a href="https://instagram.com/yrizzme">yrizzme</a></p>     
-    <p>read some of my pieces on <a href="https://substack.com/@yrizzme" target="_blank">substack</a></p>
-    <p>(i sometimes write about tech, food, aviation, or just something random)</p>
-    <p>heres a lil taste</p>
-    <div class="substack-post-embed"><p lang="en">snickers</p>
 
-    a snickers bar lay before me. I carefully tear open its fragile wrapper, releasing the sweet, iconic scent. my finger gracefully glides over the ripples of silky milk chocolate on the top of the bar. as i sink my teeth into heaven, the tantalising taste of milk chocolate, luscious caramel, chewy nougat and crunchy peanuts grace my tongue. in mere seconds, it's gone, only leaving the wrapper and some creamy milk chocolate on my lips as evidence of its tasty existence.</p><a data-comment-link href="https://substack.com/@yrizzme/" target="_blank">- yahya rizmi on substack</a>
+
+
+    <h2>links</h2>
+
+    <p><a href="https://www.youtube.com/@Waveform" target="_blank">my favorite  podcast - waveform</a></p>
+    <p><a href="https://www.youtube.com/@KidsoftheColony" target="_blank">my favorite youtube series rn - kids of the colony</a></p>
+
+  <!-- From Uiverse.io by vikas7754 --> 
+  <div class="terminal-loader">
+    <div class="terminal-header">
+      <div class="terminal-title">Status</div>
+      <div class="terminal-controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="text">dont worry this is VERY MUCH a wip</div>
+    </div>
+  </div>
+
+    <a href="https://www.youtube.com/watch?v=xMHJGd3wwZk" target="_blank">
+      <img src="got_html.gif" />
+    </a>
+
     
     <script type="module" src="/script.js"></script>
   </body>
