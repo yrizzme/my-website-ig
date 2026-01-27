@@ -1,103 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>yrizzme</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <h1>yahyarizmi.com</h1>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yrizzme</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
+        <p>
+            hi, my name is yahya rizmi and i like to hack and tinker with tech,
+            especially tech made before i was born.
+        </p>
 
-     <h1>@yrizzme</h1>
+        <p>
+            <a href="https://blog.yahyarizmi.com" target="_blank"
+                >click here to go visit my blog (its basically my main site
+                atp).</a
+            >
+        </p>
 
-    <p>hi, my name is yahya rizmi and i like to hack and tinker with tech, 
-      especially tech made before i was born.</p>
-    
-    <p><a href="https://blog.yahyarizmi.com" target="_blank">click here to go visit my blog (its basically my main site atp).</a></p>
-    
-    <div class="row">
-      <h3>time:</h3>
-      <p id="time"></p>
-      <script>
-      setInterval(() => {
-        document.getElementById("time").textContent =
-          new Date().toLocaleTimeString("en-GB");
-      }, 1000);
-      </script>
-    </div>
+        <div class="row">
+            <h3>time:</h3>
+            <p id="time"></p>
+            <script>
+                setInterval(() => {
+                    document.getElementById("time").textContent =
+                        new Date().toLocaleTimeString("en-GB");
+                }, 1000);
+            </script>
+        </div>
 
-    <div class="row">
-      <h3>date:</h3>
-      <p id="date"></p>
-      <script>
-         document.getElementById("date").textContent =
-          new Date().toLocaleDateString("en-GB");
-      </script>
-    </div>
-    shush this is the corect layout
-        
+        <div class="row">
+            <h3>date:</h3>
+            <p id="date"></p>
+            <script>
+                document.getElementById("date").textContent =
+                    new Date().toLocaleDateString("en-GB");
+            </script>
+        </div>
+        shush this is the corect layout
 
-    <h5>📍london, uk</h5>
-    <h8></h8>
+        <h5>📍london, uk</h5>
+        <h8></h8>
 
-      <img src="lotustower.jpeg"
-         style="width:128px; height:128px; border-radius:25%;" />
-       <h5>the lotus tower</h5>
+        <img
+            src="lotustower.jpeg"
+            style="width: 128px; height: 128px; border-radius: 25%"
+        />
+        <h5>the lotus tower</h5>
 
+        <h2>links</h2>
 
+        <p>
+            <a href="https://www.youtube.com/@Waveform" target="_blank"
+                >my favorite podcast - waveform</a
+            >
+        </p>
+        <p>
+            <a href="https://www.youtube.com/@KidsoftheColony" target="_blank"
+                >my favorite youtube series rn - kids of the colony</a
+            >
+        </p>
 
-    <h2>links</h2>
+        <div class="row">
+            <a
+                href="https://www.youtube.com/watch?v=xMHJGd3wwZk"
+                target="_blank"
+            >
+                <img src="got_html.gif" />
+            </a>
+            <a href="https://blog.yahyarizmi.com" target="_blank">
+                <img src="myblog.png" />
+            </a>
+            <a href="https://notes.yahyarizmi.com" target="_blank">
+                <img src="mynotesapp.png" />
+            </a>
+            <button id="themeBtn">toggle theme</button>
+            <script>
+                const btn = document.getElementById("themeBtn");
+                btn.onclick = () => {
+                    document.body.classList.toggle("dark");
+                };
+            </script>
+            <style>
+                body.dark {
+                    background: #111;
+                    color: #eee;
+                }
+                button {
+                    margin: 5px;
+                    padding: 5px;
+                }
+            </style>
+        </div>
 
-    <p><a href="https://www.youtube.com/@Waveform" target="_blank">my favorite  podcast - waveform</a></p>
-    <p><a href="https://www.youtube.com/@KidsoftheColony" target="_blank">my favorite youtube series rn - kids of the colony</a></p>
-
-  <!-- From Uiverse.io by vikas7754 --> 
-  <div class="terminal-loader">
-    <div class="terminal-header">
-      <div class="terminal-title">Status</div>
-      <div class="terminal-controls">
-        <div class="control close"></div>
-        <div class="control minimize"></div>
-        <div class="control maximize"></div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="text">dont worry this is VERY MUCH a wip</div>
-    </div>
-  </div>
-
-
-
-<div class="row">
-    <a href="https://www.youtube.com/watch?v=xMHJGd3wwZk" target="_blank">
-      <img src="got_html.gif" />
-    </a>
-    <a href="https://blog.yahyarizmi.com" target="_blank">
-      <img src="myblog.png" />
-    </a>
-    <a href="https://notes.yahyarizmi.com" target="_blank">
-      <img src="mynotesapp.png" />
-    </a>
-  <button id="themeBtn">toggle theme</button>
-  <script>
-  const btn = document.getElementById('themeBtn');
-  btn.onclick = ()=>{
-    document.body.classList.toggle('dark');
-  }
-  </script>
-  <style>
-  body.dark{background:#111;color:#eee}
-  button{margin:5px;padding:5px;}
-  </style>
-</div>
-
-
-
-
-
-    
-    <script type="module" src="/script.js"></script>
-  </body>
+        <script type="module" src="/script.js"></script>
+    </body>
 </html>
