@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yahya</title>
+  <title>about · yahya</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
@@ -18,8 +18,6 @@
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
       font-family: 'Inter', sans-serif;
       background: var(--warm);
       color: var(--dark);
@@ -45,19 +43,15 @@
       color: var(--lavender);
     }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
+    main {
+      max-width: 650px;
+      margin: 8rem auto 4rem auto;
+      padding: 0 2rem;
     }
 
     h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     .accent {
@@ -65,40 +59,17 @@
     }
 
     p {
-      font-size: 1.2rem;
-      font-weight: 200;
-      margin: 1rem 0 2rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.7;
       color: var(--grey);
-      max-width: 500px;
-    }
-
-    .links {
-      display: flex;
-      gap: 1.5rem;
-      font-weight: 400;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: var(--dark);
-      font-size: 1rem;
-      letter-spacing: 0.5px;
-      transition: 0.2s ease;
-    }
-
-    .links a:hover {
-      color: var(--lavender);
+      margin-bottom: 1.5rem;
     }
 
     .footer {
+      margin-top: 5rem;
       font-size: 0.8rem;
       color: var(--grey);
-      margin-top: 4rem;
-    }
-    .footer {
-      font-size: 0.8rem;
-      color: var(--grey);
-      margin-top: 4rem;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
@@ -117,25 +88,33 @@
     <a href="https://blog.yahyarizmi.com">blog</a>
     <a href="https://contact.yahyarizmi.com">contact</a>
     <a href="https://notes.yahyarizmi.com">notes</a>
-    <a href="https://yahyarizmi.com">home</a>
+    <a href="index.html">home</a>
   </nav>
 
-  <h1>yahya<span class="accent">.</span></h1>
+  <main>
+    <h1>about<span class="accent">.</span></h1>
 
-  <p>
-    tech, food, travel.
-  </p>
+    <p>
+     ---
+    </p>
 
-  <div class="links">
-    <a href="https://blog.yahyarizmi.com/projects/index.html">projects</a>
-    <a href="about.html">about</a>
-  </div>
+    <p>
+    ---
+    </p>
 
-  <div class="footer">
-    yahyarizmi · 🇱🇰🇬🇧 · 2026
-  </div>
-  <div class="sub-footer">
-    📍in london rn
-  </div>
+    <p>
+    ---
+    </p>
+
+    <p>
+    ---
+    </p>
+
+    <div class="footer">
+      <div>yahyarizmi · 🇱🇰🇬🇧 · 2026</div>
+      <div class="sub-footer">📍 in london rn</div>
+    </div>
+  </main>
+
 </body>
 </html>
